@@ -1,0 +1,77 @@
+{
+  "config": {
+    "seed": 42,
+    "n_users": 59877,
+    "weeks": 104,
+    "start": "2024-01-01",
+    "hike_date": "2025-03-03",
+    "exp_date": "2025-05-12",
+    "incident_days": [
+      "2025-03-10",
+      "2025-03-11",
+      "2025-03-12"
+    ]
+  },
+  "injected": {
+    "zero_amount_success": 40,
+    "payment_before_signup": 30,
+    "duplicate_payments": 634,
+    "null_region": 854,
+    "negative_hours": 25,
+    "overlapping_spells": 20
+  },
+  "hazard_ratios": {
+    "planted_log_hazard": {
+      "social": 0.4,
+      "referral": -0.35,
+      "partner": 0.18,
+      "search": 0.08,
+      "basic": 0.25,
+      "premium": -0.25,
+      "tv": -0.15,
+      "web": 0.1,
+      "engagement_per_log_hour": -0.45,
+      "hike": 0.28,
+      "summer": 0.15
+    }
+  },
+  "offer": {
+    "n_assigned": 1437,
+    "n_treated": 707,
+    "true_effect_on_treated_4w_churn": -0.0693,
+    "by_type": {
+      "persuadable": {
+        "n_treated": 197,
+        "effect": -0.3046
+      },
+      "sure_thing": {
+        "n_treated": 254,
+        "effect": 0.0
+      },
+      "lost_cause": {
+        "n_treated": 139,
+        "effect": 0.0
+      },
+      "sleeping_dog": {
+        "n_treated": 117,
+        "effect": 0.094
+      }
+    },
+    "type_share_in_experiment": {
+      "persuadable": 0.272,
+      "sure_thing": 0.384,
+      "lost_cause": 0.196,
+      "sleeping_dog": 0.148
+    }
+  },
+  "hike": {
+    "treated_regions": [
+      "Volga",
+      "South",
+      "Siberia"
+    ],
+    "post_weekly_churn_with_hike": 0.01499,
+    "post_weekly_churn_without_hike": 0.01166,
+    "true_effect_weekly_churn_pp": 0.3332
+  }
+}

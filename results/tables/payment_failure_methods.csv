@@ -1,0 +1,4 @@
+﻿method,true_positive,false_positive,missed,precision,recall,delay_days
+flag_binom,3,0,0,1.0,1.0,0
+flag_cusum,3,1,0,0.75,1.0,0
+flag_iso,3,4,0,0.42857142857142855,1.0,0
